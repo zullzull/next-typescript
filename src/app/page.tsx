@@ -6,6 +6,12 @@ import Works from "@/component/Works";
 import fs from 'fs';
 import matter from "gray-matter";
 import path from 'path';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Homepage",
+  description: "I&apos;m web or app developer, a focused on creating tailor-made websites.",
+};
 
 export default function Home() {
   const files = fs.readdirSync(path.join(process.cwd(), 'public', 'work'));

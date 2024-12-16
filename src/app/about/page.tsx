@@ -1,6 +1,15 @@
-"use client"
 import Showcase from "@/component/Showcase";
 import dayjs from "dayjs";
+import type { Metadata } from "next";
+
+type BubleItemProps = {
+    name : string
+}
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "contact me",
+};
 
 export default function About() {
     const tech = ["React", "Next.js", "Nuxt.js", "Wordpress", "Woocommerce", "Strapi CMS", "GraphQL", "htmlcss3", "Tailwind CSS", "Framer Motion"]
@@ -79,10 +88,6 @@ export default function About() {
             </section>
         </main>
     )
-}
-
-type BubleItemProps = {
-    name : string
 }
 
 const BubleItem = ({ name }: BubleItemProps) => {

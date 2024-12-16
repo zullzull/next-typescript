@@ -36,7 +36,7 @@ export default function Works({posts = []}: WorksProps) {
         setOpen(!open)
         setSelectedWork(item)
     }
-    console.log(selectedWork)
+    
     return(
         <>
             <div className="max-w-7xl m-auto my-8 px-4 lg:px-6">

@@ -17,7 +17,7 @@ type WorkProps = {
 }
 
 export default function Work({ data }: WorkProps) {
-    console.log(data)
+    
     return (
         <section className="max-w-xl w-full m-auto px-4 lg:px-6">
             <article className="prose relative mt-8">
